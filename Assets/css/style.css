@@ -5,140 +5,93 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Oswald", sans-serif;
-    font-optical-sizing: auto;
 }
 
-.title{
-    text-transform: uppercase;
+body{
+    height: 100vh;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+/*
+# Menu de navegação!!!!
+*/
+nav.menuLateral{
+    width: 123px;
+    height: 100%;
+    background-color: rgb(41, 39, 39);
+    padding: 40px 0 40px 1%;
+    box-shadow: 5px 0 0 rgb(23, 129, 129);
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: 0.5s;
 }
 
-
-
-.botaoPacote{
-    position: absolute;
-    right: 0;
+nav.menuLateral.expandir{
+    width: 300px;
 }
 
-h1{
-    padding: 8px;
-    color: #fbf2c0;
-    text-align: center;
-    font-size: 50px;
-    background-color: #260701;
+.btn-expandir{
+    width: 100%;
+    padding-left: 30px;
 }
 
-#nomePacote{
-    font-size: 50px;
-    color: black;
-    margin: 15px;
-}
-
-h6{
-    text-align: center;
-}
-
-#titulo-pacote{
-    text-align: center;
-    background-color: #ffedd8;
-}
-
-#Copryght{
-    font-size: 13px;
-    background-color: bisque;
-}
-
-#viagens{
-    display: flex;
-}
-
-.container{
-    max-width: 1080px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#nomePacote{
-    text-decoration: none;
-}
-
-#meio{
-    width: 50%;
-}
-
-#fim{
-    width: 50%;
-    display: flex;
-    align-items: center;
-}
-
-.logo, .sociais{
-    width: 25%;
+.btn-expandir > i{
+    color: white;
+    font-size: 20px;
     cursor: pointer;
 }
 
-.menu{
-    width: 50%;
+ul{
+    height: 100%;
+    list-style-type: none;
 }
 
-.menu nav a{
+ul li.itemMenu{
+    transition: .5s;
+}
+
+ul li.open{
+    background-color: rgb(23, 129, 129);
+}
+
+ul li.itemMenu:hover{
+    background-color: rgb(23, 129, 129);
+}
+
+ul li.itemMenu a{
+    color: white;
     text-decoration: none;
     font-size: 20px;
-    padding-right: 40px;
-    position: relative;
+    padding: 20px 4%;
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
 }
 
-.menu nav a::after{
-    content: " ";
-    width: 0px;
-    height: 4px;
-    position: absolute;
-    background-image: linear-gradient(45deg, aqua,rgb(0, 140, 255));
-    top: 32px;
-    left: 0;
-    transition: width 0.5s;
+ul li.itemMenu a .txtLink{
+    margin-left: 70px;
+    transition: .7s;
+    opacity: 0;
 }
 
-.menu nav a:hover::after{
-    width: 30px;
+nav.menuLateral.expandir .txtLink{
+    margin-left: 40px;
+    opacity: 1;
 }
 
-.logo{
-    position: absolute;
-    left: 0;
+ul li.itemMenu a .icon > i{
+    font-size: 40px;
+    margin-left: 0px;
 }
+/*
+#Fim menu
+*/
 
-.sociais button{
-    width: 45px;
-    height: 45px;
-    background-image: linear-gradient(45deg, aqua,rgb(0, 140, 255));
-    border: none;
-    border-radius: 15px;
-    margin-right: 10px;
+.title{
+    margin: 0 500px;
 }
-
-.sociais button i{
-    font-size: 30px;
-    color: white;
-}
-
-
-
-
-
-
-
-
-
 
 
 
