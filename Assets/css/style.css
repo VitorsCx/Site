@@ -1,8 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
 }
+
 .title{
     text-transform: uppercase;
 }
@@ -24,6 +29,7 @@ h6{
 }
 
 h1{
+    padding: 8px;
     color: #fbf2c0;
     text-align: center;
     font-size: 50px;
@@ -61,7 +67,9 @@ h6{
     align-items: center;
 }
 
-
+#nomePacote{
+    text-decoration: none;
+}
 
 #meio{
     width: 50%;
@@ -72,6 +80,77 @@ h6{
     display: flex;
     align-items: center;
 }
+
+.logo, .sociais{
+    width: 25%;
+    cursor: pointer;
+}
+
+.menu{
+    width: 50%;
+}
+
+.menu nav a{
+    text-decoration: none;
+    font-size: 20px;
+    padding-right: 40px;
+    position: relative;
+}
+
+.menu nav a::after{
+    content: " ";
+    width: 0px;
+    height: 4px;
+    position: absolute;
+    background-image: linear-gradient(45deg, aqua,rgb(0, 140, 255));
+    top: 32px;
+    left: 0;
+    transition: width 0.5s;
+}
+
+.menu nav a:hover::after{
+    width: 30px;
+}
+
+.logo{
+    position: absolute;
+    left: 0;
+}
+
+.sociais button{
+    width: 45px;
+    height: 45px;
+    background-image: linear-gradient(45deg, aqua,rgb(0, 140, 255));
+    border: none;
+    border-radius: 15px;
+    margin-right: 10px;
+}
+
+.sociais button i{
+    font-size: 30px;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
